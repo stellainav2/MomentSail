@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		550E28362E85ABFA001BB716 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550E28352E85ABFA001BB716 /* CoreLocation.framework */; };
+		550E28382E85AC00001BB716 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 550E28372E85AC00001BB716 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		557591E92E848E6D0086F5AF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		550E28352E85ABFA001BB716 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		550E28372E85AC00001BB716 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		557591D92E848E6B0086F5AF /* MomentSail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MomentSail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		557591E82E848E6D0086F5AF /* MomentSailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentSailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		557591F22E848E6D0086F5AF /* MomentSailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentSailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +175,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				550E28382E85AC00001BB716 /* MapKit.framework in Frameworks */,
+				550E28362E85ABFA001BB716 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,6 +197,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550E28342E85ABF9001BB716 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				550E28372E85AC00001BB716 /* MapKit.framework */,
+				550E28352E85ABFA001BB716 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		557591D02E848E6B0086F5AF = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +214,7 @@
 				557591F52E848E6D0086F5AF /* MomentSailUITests */,
 				557591DA2E848E6B0086F5AF /* Products */,
 				557592C42E849CE10086F5AF /* Inter-4.1 */,
+				550E28342E85ABF9001BB716 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
